@@ -13,7 +13,7 @@ const App = () => {
       <Button variant="contained" onClick={() => setOpen(!open)}>
         Abrir
       </Button>
-      <ShenDialog open={open} onClose={() => setOpen(!open)}>
+      <ShenDialog title="Titulo do modal" open={open} onClose={() => setOpen(!open)}>
         Teste Everton
       </ShenDialog>
     </div>

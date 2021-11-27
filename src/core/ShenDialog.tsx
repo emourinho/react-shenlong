@@ -1,7 +1,17 @@
 import * as React from 'react'
-import { Dialog, DialogProps, Fab, Icon } from '@mui/material'
+import { Dialog, DialogTitle, DialogProps, Fab, Icon } from '@mui/material'
 
-export const ShenDialog = ({ children, ...others }: DialogProps) => {
+interface ShenDialogProps extends DialogProps {
+  title?: string
+  subTitle?: string
+}
+
+export const ShenDialog = ({
+  children,
+  title,
+  subTitle,
+  ...others
+}: ShenDialogProps) => {
   return (
     <Dialog fullWidth maxWidth='md' {...others}>
       <div style={{ textAlign: 'right', height: 8 }}>
@@ -17,7 +27,8 @@ export const ShenDialog = ({ children, ...others }: DialogProps) => {
           <Icon style={{ fontWeight: 'bold' }}>close</Icon>
         </Fab>
       </div>
-      <main>{children}</main>
+      {title && <DialogTitle>{title}</DialogTitle>}
+      {children}
     </Dialog>
   )
 }
