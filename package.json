@@ -1,6 +1,6 @@
 {
   "name": "react-shenlong",
-  "version": "1.4.0-0",
+  "version": "1.0.1",
   "description": "Made with create-react-library",
   "author": "Everton Mourinho",
   "license": "MIT",
@@ -59,8 +59,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
-    "typescript": "^3.7.5",
-    "semantic-release": "^18.0.1"
+    "semantic-release": "^18.0.1",
+    "typescript": "^3.7.5"
   },
   "files": [
     "dist"
